@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(3.jpg);
+}
+.con{
+    margin: 30vh auto 0 auto; /* Center horizontally */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+}
+button{
+    margin-top: 20px;
+    padding: 12px;
+    width: 100px;
+    border-radius: 20px;
+}
+.us input{
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.one input{
+    height: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+button:hover{
+    background-color: rgb(81, 52, 110);
+    transition: 0.1s;
+}
+@media (max-width: 600px) {
+    .con {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .us input,
+    .one input,
+    button {
+        width: 100%;
+    }
+}
+
+

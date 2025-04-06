@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(login.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.options a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.options ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 200px;
+    gap: 40px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.cotton{
+    margin-left: 20px;
+    animation: rotate 2s infinite;
+    color: white;
+}
+.seachbox{
+    height: 30px;
+    border-radius: 23px;
+    background-color: transparent;
+    border-color: white;
+}
+.login{
+    font-size: 20px;
+    margin-right: 60px;
+    padding: 8px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: transparent;
+}
+.login:hover{
+    background-color: white;
+    transform: translateY(-5px);
+    transition: 1s ease;
+}
+.options li{
+    color: white;
+    padding: 10PX;
+}
+
+.options li:hover{
+    background-color: black;
+    border-radius: 12px;
+    transform: translateY(-5px);
+    transition: 1s;
+    cursor: pointer;
+}
+@keyframes rotate{
+    0%{
+        transform: rotateY(360deg);
+    }
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(30px);
+    margin: 100px auto; /* Center horizontally */
+
+
+}
+.logi{
+    margin-bottom: 40px;
+}
+.logpage input{
+    margin-bottom: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+}
+.si{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
+.acc{
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.acc button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    border-color: transparent;
+    cursor: pointer;
+}
+.pass input{
+    margin-bottom: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+}
+.cre button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    border-color: transparent;
+    font-size: 20px;
+}
+.cre button:hover{
+    background-color: rgb(105, 46, 46);
+    transition: 0.5s;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .page {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .logpage input,
+    .pass input,
+    .acc button,
+    .cre button {
+        width: 100%;
+    }
+}
+
+
